@@ -1,0 +1,16 @@
+#!/etc/systemd/system
+[Unit]
+Description=Cham4V
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/usr/local/bin/bot
+ExecStart="/usr/local/bin/python3.8  /usr/local/bin/bot/shka.py"
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
