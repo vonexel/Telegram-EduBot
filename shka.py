@@ -144,12 +144,12 @@ def third(message):
     if message.text == 'Тесты':
         keyboard = types.ReplyKeyboardMarkup(True, False)
         send = bot.send_message(message.chat.id,"Здесь Вы сможете пройти тесты по химиии ,не переходя на стороние ресурсы!Все тесты будут доступны в нашем чат-боте!")
-        send =bot.send_message(message.chat.id,"[Собеседование и тест](https://docs.google.com/forms/d/e/1FAIpQLSdAIzzOti7wS6CpNOmidX1f3PTFYH3Q4MJmotavCReYZe6DNA/viewform)",parse_mode='Markdown')
+        send =bot.send_message(message.chat.id,"[Собеседование и тест](https://docs.google.com/forms/)",parse_mode='Markdown')
     elif message.text == 'Лекции':
         #send = bot.send_message(message.chat.id,"Здесь, по мере освоения программы, будут публиковаться ссылки на лекции.")
         keyboard3 = types.ReplyKeyboardMarkup(True, False)
         markup = types.InlineKeyboardMarkup()
-        lessonz = types.InlineKeyboardButton(text='Лекция в Zoom', url='https://us04web.zoom.us/j/73091577424?pwd=VFRxTFdMeEptSi9TeG43aTFvdm5GUT09')
+        lessonz = types.InlineKeyboardButton(text='Лекция в Zoom', url='https://us04web.zoom.us')
         markup.add(lessonz)
         send = bot.send_message(message.chat.id, "Нажмите на кнопку,чтобы перейти на лекционное занятие.Пароль от конференции :vxwqu6",reply_markup=markup)
     elif message.text == 'Навигация':
@@ -166,12 +166,12 @@ def third(message):
     elif message.text == 'Социальные сети':
         keyboard = types.ReplyKeyboardMarkup(True, False)
         markup = types.InlineKeyboardMarkup()
-        btn_my_site = types.InlineKeyboardButton(text='Мы в Instagram', url='https://www.instagram.com/cham4v/')
+        btn_my_site = types.InlineKeyboardButton(text='Мы в Instagram', url='https://www.instagram.com/')
         markup.add(btn_my_site)
         send = bot.send_message(message.chat.id, "Нажмите на кнопку,чтобы перейти в наш инстаграм.",reply_markup=markup)
         keyboard = types.ReplyKeyboardMarkup(True, False)
         markup = types.InlineKeyboardMarkup()
-        btn_my_sitee = types.InlineKeyboardButton(text='Мы в Telegram', url='t.me/HJIEBUIIIEK')
+        btn_my_sitee = types.InlineKeyboardButton(text='Мы в Telegram', url='t.me/')
         markup.add(btn_my_sitee)
         send = bot.send_message(message.chat.id, "Нажмите на кнопку,чтобы перейти в наш телеграм.",reply_markup=markup)
 
